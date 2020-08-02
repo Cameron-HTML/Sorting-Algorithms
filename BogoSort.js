@@ -1,5 +1,5 @@
 // WANTED BALLS IN LIST
-var wantedBalls = 5;
+var wantedBalls = 6;
 
 var sorts = 0;
 
@@ -18,10 +18,10 @@ function shuffle(array) {
 	var sortedBalls = [];
 
 	for(i = 0; i < preLength; i++) {
-		var randomBall = Math.floor(Math.random() * array.length + 1);
-		sortedBalls[i] = array[randomBall - 1]
+		var randomBall = Math.floor(Math.random() * array.length);
+		sortedBalls[i] = array[randomBall]
 
-		array.splice(randomBall - 1, 1);
+		array.splice(randomBall, 1);
 	}
 
 	try {
